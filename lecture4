@@ -5,3 +5,8 @@ while pos>-1 :
     print("Donor splice site candidate at position %d" %pos)
     pos=DNA.find('gt',pos+1)
 
+## for ##
+motifs=["atttccgt","aggggggtttttttcg","gtagc"]
+for m in motifs:
+    print(m,len(m))
+
