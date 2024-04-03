@@ -1,0 +1,14 @@
+x = open(r'C:\Users\LENOVO\Downloads\lambda_virus.fa', 'r')
+## for the love of god please dont forget how to do this over and over again
+a = x.read()
+
+x.close()
+
+b = a[100:]
+
+c= b.replace("\n","")
+
+counts = {'A': 0, 'C': 0, 'G': 0, 'T': 0}
+for base in c:
+    counts[base] += 1
+print(counts)
